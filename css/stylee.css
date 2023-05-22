@@ -26,10 +26,7 @@
 *{
     background-color: black;
     color: white;
-}
-a{
-    text-decoration: none;
-    color: white;
+    font-size: 30px;
 }
 body{
     margin: 0;
@@ -37,15 +34,36 @@ body{
 }
 header{
     width: 100%;
-    height: 70px;
-    display: flex;
+    height: 300px;
+    z-index: 4;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
 }
 .logo{
-    font-size: 45px;
     width: 300px;
-    height: 70px;
+    height: 300px;
+    display: block;
+    margin-left: 40%;
+}
+.Mainmenu{
+    width:100%;
+    height: 100px;
     text-align: center;
-    font-family: 'BookkMyungjo-Bd';
+    display: none;
+}
+.Mainmenu > button{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    margin-left: 50px;
+    width: 150px;
+    border: none;
+}
+.container{
+    margin-top: 100vh;
 }
 section{
     width: 100%;
