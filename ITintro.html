@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./img/logo.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="./css/stylee.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/jquery-3.6.4.js"></script>
+    <script src="./script/jquery-migrate-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./script/server.js"></script>
-    <scirpt src="./script/jquery-3.6.4.js"></scirpt>
-    <scirpt src="./script/jquery-1.12.4.js"></scirpt>
-    <scirpt src="./script/jquery-2.2.4.js"></scirpt>
+    <script src="./script/server.js"></script> 
     <title>Maker Space</title>
 </head>
 <body>
@@ -20,28 +21,51 @@
     <header>
         <img class="logo" src="./img/logo2.png">
         <nav class="Mainmenu">
-            <button >메인</button>
-            <button >길찾기</button>
-            <button >소개글</button>
-            <button >실습실</button>
+            <button>메인</button>
+            <button>길찾기</button>
+            <button>소개글</button>
+            <button>실습실</button>
             <button>학생들</button>
         </nav>
     </header>
     <div class="container">
     <section>
-        <span>우리 실습실 들어오는 영상</span>
+        <video></video>
     </section>
     <section>
-        <span>우리 학과 소개 이야기들 ~</span>
+        <span>학과 소개<!--여기는 스크롤 애니메이션--></span>
+        <div class="imgs">
+            <img src="./img/intro-img5.png">
+        </div>
     </section>
     <section>
-        <span>추억이 가득한 우리들의 공간 (실습실)</span>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <script type="module" src="./script/slide.js"></script>
     </section>
     <section>
-        <span>우리 애들 슬라이드</span>
+        <span>우리 애들 소개 슬라이드<!--여기는 확실히 슬라이드--></span>
     </section>
     <section>
-        <span>우리가 마무리 하고 가는 모습</span>
+        <span>우리가 마무리 하고 가는 점점 어두워 지는 장면 <!--여기는 스크롤 애니메이션--></span>
     </section>
 </div>
     <footer>

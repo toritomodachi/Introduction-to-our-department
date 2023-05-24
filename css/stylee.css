@@ -23,6 +23,12 @@
     font-weight: normal;
     font-style: normal;
 }
+div {
+    box-sizing : border-box;
+  }
+  html {
+    line-height : 1.15; /*기본 행간 높이*/
+  }
 *{
     background-color: black;
     color: white;
@@ -34,18 +40,44 @@ body{
 }
 header{
     width: 100%;
-    height: 300px;
+    height: 900px;
     z-index: 4;
     justify-content: space-between;
     position: sticky;
     top: 0;
     margin-top: 0;
 }
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.imgs img{
+    width: 100%;
+    height: 100vh;
+    animation: fadein 1s;
+}
 .logo{
-    width: 300px;
-    height: 300px;
+    width: 900px;
+    height: 900px;
     display: block;
-    margin-left: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s;
+    
 }
 .Mainmenu{
     width:100%;
@@ -71,5 +103,5 @@ section{
 }
 footer{
     width: 100%;
-    height: 100px;
+    height: 89vh;
 }
