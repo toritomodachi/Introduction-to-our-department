@@ -102,6 +102,10 @@ video{
 .container{
     margin-top: 100vh;
 }
+.swiper img{
+    width: 100%;
+    height: 100%;
+  }
 section{
     width: 100%;
     height: 100vh;

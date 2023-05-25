@@ -10,6 +10,7 @@
     <script src="./script/jquery-3.6.4.js"></script>
     <script src="./script/jquery-migrate-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/server.js"></script> 
     <title>Maker Space</title>
@@ -72,7 +73,34 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
-          <script type="module" src="./script/slide.js"></script>
+          <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+            const swiper = new Swiper(".swiper",{
+              slidesPerview:3.5,
+              spaceBetween:25,
+              loop:true,
+              speed:1000,
+              simulateTouch:false,
+              speed: 400,
+
+              pagination: {
+                el: '.swiper-pagination',
+              },
+          
+              autoplay:{
+                  delay:1000
+              },
+          
+              navigation: {
+                  nextEl:".swiper-button-next",
+                  prevEl:".swiper-button-prev"
+              },
+              scrollbar: {
+                  el: '.swiper-scrollbar',
+              },
+             on: {realIndexChange:slideChange, init:swiperInit} });
+             swiper.slideChange();
+             </script>
     </section>
     <section>
         <span>우리가 마무리 하고 가는 점점 어두워 지는 장면 <!--여기는 스크롤 애니메이션--></span>
