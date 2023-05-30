@@ -46,6 +46,7 @@ header{
     position: sticky;
     top: 0;
     margin-top: 0;
+    opacity: 1;
 }
 @keyframes fadein{
     0%{
@@ -64,10 +65,13 @@ header{
         opacity: 0;
     }
 }
-video{
-    position: absolute;
+section{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+video{
+    width: 100%;
+    height: 100vh;
 }
 .imgs img{
     width: 100%;
@@ -82,7 +86,6 @@ video{
     left: 50%;
     transform: translate(-50%);
     transition: all 1s;
-    
 }
 .Mainmenu{
     width:100%;
@@ -106,10 +109,7 @@ video{
     width: 100%;
     height: 100%;
   }
-section{
-    width: 100%;
-    height: 100vh;
-}
+
 footer{
     width: 100%;
     height: 89vh;
