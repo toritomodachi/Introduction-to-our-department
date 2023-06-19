@@ -1,10 +1,12 @@
 
+
 var prevScroll = pageYOffset;
 window.addEventListener("scroll", () => prevScroll = pageYOffset);
 window.addEventListener("click", (e) => {
 if (pageYOffset !== prevScroll) return;
 e.preventDefault();
-$(window).scrollTop(1760)
+$(window).scrollTop(1760);
+
 
 $(window).on('scroll', function(){
     if (window.scrollY > 100) {

@@ -52,17 +52,11 @@ header{
     0%{
         opacity: 0;
     }
-    25%{
-        opacity: 0.5;
-    }
     50%{
-        opacity: 1;
-    }
-    75%{
         opacity: 0.5;
     }
     100%{
-        opacity: 0;
+        opacity: 1;
     }
 }
 section{
@@ -123,8 +117,8 @@ button {
     width: 300px;
     height: 100px;
     position: absolute;
+    animation: fadein 0.5s;
     transform: translate(20%);
-    transition: all 1s;
   }
 .logo{
     width: 900px;
@@ -132,15 +126,19 @@ button {
     display: block;
     position: absolute;
     left: 50%;
+    animation: fadein 0.5s;
     transform: translate(-50%);
     transition: all 1s;
 }
 .Mainmenu{
     width:50%;
-    margin-left: 50%;
+    margin-left: 49%;
     padding-top: 1.5%;
     text-align: center;
     display: none;
+    animation: fadein 0.5s;
+    transform: translate(1%);
+    transition: all 1s;
 }
 .Mainmenu > button{
     border-radius: 20px;
