@@ -61,7 +61,7 @@ header{
 }
 section{
     width: 100%;
-    height: 100vh;
+    height:300vh;
 }
 video{
     width: 100%;
@@ -126,7 +126,6 @@ button {
     display: block;
     position: absolute;
     left: 50%;
-    animation: fadein 0.5s;
     transform: translate(-50%);
     transition: all 1s;
 }
@@ -161,3 +160,5 @@ footer{
     width: 100%;
     height: 89vh;
 }
+.scrollLock { overflow: hidden; }
+:root { scroll-behavior : auto }

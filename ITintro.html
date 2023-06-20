@@ -40,65 +40,11 @@
     </section>
     <section>
         <p>우리들의 추억이 가득한 실습실</p>
+        <!--토스처럼 스크롤-->
     </section>
     <section>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./img/lwh.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/dog.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/lty.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/khm.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/psj.png">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <script type="module">
-          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
-            const swiper = new Swiper(".swiper",{
-              slidesPerview:3.5,
-              spaceBetween:25,
-              loop:true,
-              speed:1000,
-              simulateTouch:false,
-              speed: 400,
-
-              pagination: {
-                el: '.swiper-pagination',
-              },
-          
-              autoplay:{
-                  delay:1000
-              },
-          
-              navigation: {
-                  nextEl:".swiper-button-next",
-                  prevEl:".swiper-button-prev"
-              },
-              scrollbar: {
-                  el: '.swiper-scrollbar',
-              },
-             on: {realIndexChange:slideChange, init:swiperInit} });
-             </script>
+        <p>우리학과 멤버 소개</p>
+        <!--애플사이트처럼 스크롤-->
     </section>
     <section>
         <span>우리가 마무리 하고 가는 점점 어두워 지는 장면 <!--여기는 스크롤 애니메이션--></span>
